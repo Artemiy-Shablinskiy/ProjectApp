@@ -17,7 +17,7 @@ class MainScreen(Screen):
     self.layout = BoxLayout(orientation="vertical")
 
     self.label1 = Label(text="您好！",
-                        font_name="SourceHanSansSC-VF.otf",
+                        font_name="NotoSansSC-VariableFont_wght.ttf",
                         font_size=40)
     self.layout.add_widget(self.label1)
 
@@ -63,7 +63,7 @@ class SecondScreen(Screen):
     self.but_list = []
     for char in self.char_list:
       self.but_list.append(
-          Button(text=char, font_name="SourceHanSansSC-VF.otf", font_size=40))
+          Button(text=char, font_name="NotoSansSC-VariableFont_wght.ttf", font_size=40))
     for but in self.but_list:
       but.bind(on_press=self.go_to_page3)
       self.layout.add_widget(but)
@@ -100,7 +100,7 @@ class ThirdScreen(Screen):
                         text_size=(400,None),
                         valign='top',
                         halign='center',
-                        font_name="SourceHanSansSC-VF.otf",
+                        font_name="NotoSansSC-VariableFont_wght.ttf",
                         font_size=30)
 
 
@@ -108,7 +108,7 @@ class ThirdScreen(Screen):
    # self.layout.add_widget(self.label3)
 
    # self.label2 = Label(text="",
-   #                     font_name="SourceHanSansSC-VF.otf",
+   #                     font_name="NotoSansSC-VariableFont_wght.ttf",
    #                     font_size=40)
 
 
@@ -171,7 +171,7 @@ class FourthScreen(Screen):
 
 
     self.label1 = Label(text="", 
-            font_name="SourceHanSansSC-VF.otf",
+            font_name="NotoSansSC-VariableFont_wght.ttf",
             font_size="40sp",
             markup=True)
     self.layout.add_widget(self.label1)
@@ -185,7 +185,7 @@ class FourthScreen(Screen):
       values=[],  # Menu options
       size_hint=(None, None),
       size=(150, 50),
-      font_name="SourceHanSansSC-VF.otf",
+      font_name="NotoSansSC-VariableFont_wght.ttf",
 
       font_size="38sp",
       option_cls=CustomSpinnerOption
@@ -256,7 +256,7 @@ class FourthScreen(Screen):
 class CustomSpinnerOption(SpinnerOption):
   def __init__(self, **kwargs):
       super().__init__(**kwargs)
-      self.font_name = "SourceHanSansSC-VF.otf"  
+      self.font_name = "NotoSansSC-VariableFont_wght.ttf"  
       self.font_size = "38sp"  
 
 
